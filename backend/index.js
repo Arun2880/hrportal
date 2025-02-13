@@ -15,7 +15,7 @@ app.use("/uploads", express.static("uploads"));
 // Routes
 app.use("/hr/admin", Adminrouter);
 app.use("/hr/employee", Employeerouter);
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 6000;
 app.listen(port, () => {
   console.log("Server running on port no= ", port);
 });

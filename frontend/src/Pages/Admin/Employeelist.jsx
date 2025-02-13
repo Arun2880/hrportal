@@ -20,7 +20,7 @@ const Employeelist = () => {
 
   const GetEmployeelist = async () => {
     try {
-      const url = "http://localhost:5000/hr/admin/emplist";
+      const url = "https://hrportal.dreambytesolution.com/hr/admin/emplist";
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -51,7 +51,7 @@ const Employeelist = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const url = `http://localhost:5000/hr/admin/delemp/${employeeId}`;
+          const url = `https://hrportal.dreambytesolution.com/hr/admin/delemp/${employeeId}`;
           const headers = {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
@@ -73,7 +73,7 @@ const Employeelist = () => {
 
   const handleUpdateEmployee = async () => {
     try {
-      const url = `http://localhost:5000/hr/admin/updateemp/${currentEmployee._id}`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/updateemp/${currentEmployee._id}`;
       const headers = {
         "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${token}`,
@@ -148,11 +148,11 @@ const Employeelist = () => {
       width: 150,
       renderCell: (params) => (
         <img
-          src={`http://localhost:5000/hr/${params.value}`}
+          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
           alt="Aadhar"
           style={{ width: 50, height: 50, cursor: "pointer" }}
           onClick={() =>
-            handleImageClick(`http://localhost:5000/hr/${params.value}`)
+            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
           }
         />
       ),
@@ -163,11 +163,11 @@ const Employeelist = () => {
       width: 150,
       renderCell: (params) => (
         <img
-          src={`http://localhost:5000/hr/${params.value}`}
+          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
           alt="PAN"
           style={{ width: 50, height: 50, cursor: "pointer" }}
           onClick={() =>
-            handleImageClick(`http://localhost:5000/hr/${params.value}`)
+            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
           }
         />
       ),
@@ -178,11 +178,11 @@ const Employeelist = () => {
       width: 150,
       renderCell: (params) => (
         <img
-          src={`http://localhost:5000/hr/${params.value}`}
+          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
           alt="Resume"
           style={{ width: 50, height: 50, cursor: "pointer" }}
           onClick={() =>
-            handleImageClick(`http://localhost:5000/hr/${params.value}`)
+            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
           }
         />
       ),
@@ -193,11 +193,11 @@ const Employeelist = () => {
       width: 150,
       renderCell: (params) => (
         <img
-          src={`http://localhost:5000/hr/${params.value}`}
+          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
           alt="Experience Letter"
           style={{ width: 50, height: 50, cursor: "pointer" }}
           onClick={() =>
-            handleImageClick(`http://localhost:5000/hr/${params.value}`)
+            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
           }
         />
       ),

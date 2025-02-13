@@ -36,7 +36,7 @@ const Applyleave = () => {
 
   const Applyleaveapi = async () => {
     try {
-      const url = `http://localhost:5000/hr/employee/applyleave`;
+      const url = `https://hrportal.dreambytesolution.com/hr/employee/applyleave`;
 
       const headers = {
         "Content-Type": "application/json",

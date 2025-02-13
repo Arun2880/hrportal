@@ -30,7 +30,7 @@ function NavAvatar() {
   // Logout function
   const Logoutuser = async () => {
     try {
-      const url = "http://localhost:5000/hr/admin/logout";
+      const url = "https://hrportal.dreambytesolution.com/hr/admin/logout";
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",

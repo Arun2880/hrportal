@@ -18,7 +18,7 @@ const Viewourquery = () => {
 
   const Getyourquery = async () => {
     try {
-      const url = `http://localhost:5000/hr/employee/getquery/${employeeId}`;
+      const url = `https://hrportal.dreambytesolution.com/hr/employee/getquery/${employeeId}`;
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",

@@ -15,7 +15,7 @@ const Addquery = () => {
 
   const sendQuery = async () => {
     try {
-      const url = `http://localhost:5000/hr/employee/addquery`;
+      const url = `https://hrportal.dreambytesolution.com/hr/employee/addquery`;
 
       const headers = {
         "Content-Type": "application/json",

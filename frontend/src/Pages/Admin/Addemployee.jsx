@@ -48,7 +48,7 @@ const Addemployee = () => {
   // Add employee API request
   const AddEmployeeAPI = async () => {
     try {
-      const url = `http://localhost:5000/hr/admin/registeremp`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/registeremp`;
 
       // Create FormData object
       const formDataToSend = new FormData();

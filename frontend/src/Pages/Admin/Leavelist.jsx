@@ -20,7 +20,7 @@ const Leavelist = () => {
 
   const getAllLeaves = async () => {
     try {
-      const url = "http://localhost:5000/hr/admin/allleaves";
+      const url = "https://hrportal.dreambytesolution.com/hr/admin/allleaves";
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -52,7 +52,7 @@ const Leavelist = () => {
 
   const updateLeaveStatus = async (leaveId, status) => {
     try {
-      const url = "http://localhost:5000/hr/admin/leaveapprove";
+      const url = "https://hrportal.dreambytesolution.com/hr/admin/leaveapprove";
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -92,7 +92,7 @@ const Leavelist = () => {
 
   const handleUpdateLeave = async () => {
     try {
-      const url = `http://localhost:5000/hr/admin/updateleave/${selectedLeave.id}`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/updateleave/${selectedLeave.id}`;
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",

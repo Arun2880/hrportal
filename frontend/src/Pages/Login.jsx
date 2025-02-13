@@ -31,7 +31,7 @@ const Login = () => {
         body.password = password; // Always send password
   
         const response = await axios.post(
-          "http://localhost:5000/hr/admin/login",
+          "https://hrportal.dreambytesolution.com/hr/admin/login",
           body
         );
   console.log("response of login api",response);

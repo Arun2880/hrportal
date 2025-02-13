@@ -40,7 +40,7 @@ const Viewquery = () => {
 
   const Getquery = async () => {
     try {
-      const url = `http://localhost:5000/hr/admin/getallquery`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/getallquery`;
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",
@@ -55,7 +55,7 @@ const Viewquery = () => {
 
   const handleUpdateStatus = async (queryId, newStatus) => {
     try {
-      const url = `http://localhost:5000/hr/admin/chnagestatus/${queryId}`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/chnagestatus/${queryId}`;
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",

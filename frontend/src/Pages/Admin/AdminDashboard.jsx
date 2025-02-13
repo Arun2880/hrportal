@@ -41,7 +41,7 @@ const AdminDashboard = () => {
 
   const Totalemployeedata = async () => {
     try {
-      const url = `http://localhost:5000/hr/admin/emplist`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/emplist`;
       const headers = {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",
@@ -64,7 +64,7 @@ const AdminDashboard = () => {
 
   const Totalunsolvequery = async () => {
     try {
-      const url = `http://localhost:5000/hr/admin/getallquery`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/getallquery`;
       const headers = {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",
@@ -92,7 +92,7 @@ const AdminDashboard = () => {
 
   const Totalsolvequery = async () => {
     try {
-      const url = `http://localhost:5000/hr/admin/solvequery`;
+      const url = `https://hrportal.dreambytesolution.com/hr/admin/solvequery`;
       const headers = {
         "Content-Type": "multipart/form-data",
         Accept: "application/json",

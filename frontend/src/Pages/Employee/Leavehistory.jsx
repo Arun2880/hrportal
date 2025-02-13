@@ -18,7 +18,7 @@ const Leavehistory = () => {
 
   const Getyourleaveshistory = async () => {
     try {
-      const url = `http://localhost:5000/hr/employee/leavehistory/${employeeId}`;
+      const url = `https://hrportal.dreambytesolution.com/hr/employee/leavehistory/${employeeId}`;
       const headers = {
         "Content-Type": "application/json",
         Accept: "application/json",
