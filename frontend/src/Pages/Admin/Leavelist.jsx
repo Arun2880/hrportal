@@ -27,7 +27,7 @@ const Leavelist = () => {
         Authorization: `Bearer ${token}`,
       };
       const response = await axios.get(url, { headers });
-      console.log("Response of leave", response.data);
+      // console.log("Response of leave", response.data);
 
       if (!response.data.error) {
         const formattedData = response.data.data.map((leave) => ({
@@ -59,7 +59,7 @@ const Leavelist = () => {
         Authorization: `Bearer ${token}`,
       };
       const response = await axios.put(url, { leaveId, status }, { headers });
-      console.log("Update Response:", response.data);
+      // console.log("Update Response:", response.data);
       if (response.error == false) {
         Swal.fire({
           title: "Good job!",
@@ -110,7 +110,7 @@ const Leavelist = () => {
         { headers }
       );
 
-      console.log("Update Leave Response:", response.data);
+      // console.log("Update Leave Response:", response.data);
 
       if (!response.data.error) {
         getAllLeaves();

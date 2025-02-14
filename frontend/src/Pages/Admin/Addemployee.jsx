@@ -85,9 +85,9 @@ const Addemployee = () => {
           text: "Employee added successfully",
         });
       }
-      console.log("Response of add employee", response);
+      // console.log("Response of add employee", response);
     } catch (error) {
-      console.log("Error adding employee", error);
+      // console.log("Error adding employee", error);
       Swal.fire({
         icon: "error",
         title: "Oops...",
@@ -234,11 +234,11 @@ const Addemployee = () => {
                 type="date"
                 variant="outlined"
                 required
-                name="joindate" // Fixed the name here
+                name="joindate" 
                 value={formData.joindate}
                 onChange={handleChange}
                 InputLabelProps={{
-                  shrink: true, // Ensures the label stays visible
+                  shrink: true, 
                 }}
               />
             </Grid>
@@ -272,7 +272,6 @@ const Addemployee = () => {
                 fullWidth
                 type="file"
                 variant="outlined"
-                required
                 name="adhar"
                 label="Upload Aadhar Card"
                 onChange={handleFileChange}
@@ -286,7 +285,6 @@ const Addemployee = () => {
                 fullWidth
                 type="file"
                 variant="outlined"
-                required
                 name="pan"
                 label="Upload Pan Card"
                 onChange={handleFileChange}
@@ -300,7 +298,6 @@ const Addemployee = () => {
                 fullWidth
                 type="file"
                 variant="outlined"
-                required
                 name="resume"
                 label="Upload Resume"
                 onChange={handleFileChange}
@@ -314,7 +311,6 @@ const Addemployee = () => {
                 fullWidth
                 type="file"
                 variant="outlined"
-                required
                 name="experience_letter"
                 label="Experience Letter"
                 onChange={handleFileChange}

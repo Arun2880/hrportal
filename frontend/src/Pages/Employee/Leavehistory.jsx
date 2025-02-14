@@ -26,7 +26,7 @@ const Leavehistory = () => {
       };
 
       const response = await axios.get(url, { headers });
-      console.log("response of leave history", response);
+      // console.log("response of leave history", response);
 
       if (response.data.error === false) {
         setLeaveHistory(response.data.data);

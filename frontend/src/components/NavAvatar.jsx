@@ -37,7 +37,7 @@ function NavAvatar() {
       };
 
       const response = await axios.post(url, { headers });
-      console.log("logout", response);
+      // console.log("logout", response);
 
       // Clear user data
       sessionStorage.removeItem("name");

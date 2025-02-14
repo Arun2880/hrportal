@@ -30,7 +30,7 @@ const Addquery = () => {
       };
 
       const response = await axios.post(url, requestBody, { headers: headers });
-      console.log("Add query API response:", response);
+      // console.log("Add query API response:", response);
 
       Swal.fire({
         icon: "success",

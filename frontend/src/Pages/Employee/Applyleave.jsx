@@ -52,7 +52,7 @@ const Applyleave = () => {
       };
 
       const response = await axios.post(url, requestBody, { headers });
-      console.log("Response of apply leave:", response);
+      // console.log("Response of apply leave:", response);
       if (response.status == 201) {
         Swal.fire({
           title: "Good job!",

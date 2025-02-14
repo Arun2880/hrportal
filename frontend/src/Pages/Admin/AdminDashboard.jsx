@@ -48,7 +48,7 @@ const AdminDashboard = () => {
         Authorization: `Bearer ${token}`,
       };
       const response = await axios.get(url, { headers: headers });
-      console.log("response of employee", response.data);
+      // console.log("response of employee", response.data);
       setemployeedata(response.data.data.length);
 
       // Prepare data for the bar chart
@@ -58,7 +58,7 @@ const AdminDashboard = () => {
       }));
       setEmployeeChartData(employeeData);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 
@@ -71,7 +71,7 @@ const AdminDashboard = () => {
         Authorization: `Bearer ${token}`,
       };
       const response = await axios.get(url, { headers: headers });
-      console.log("response unsolve", response.data);
+      // console.log("response unsolve", response.data);
       setunsolvedata(response.data.data.length);
 
       // Prepare data for the pie chart
@@ -86,7 +86,7 @@ const AdminDashboard = () => {
       }));
       setQueryChartData(pieChartData);
     } catch (error) {
-      console.log(error);
+      // console.log(error);
     }
   };
 
@@ -98,7 +98,7 @@ const AdminDashboard = () => {
         Accept: "application/json",
       };
       const response = await axios.get(url, { headers: headers });
-      console.log("response of solve", response);
+      // console.log("response of solve", response);
       setsolvedata(response.data.data.length);
     } catch (error) {
       console.log(error);

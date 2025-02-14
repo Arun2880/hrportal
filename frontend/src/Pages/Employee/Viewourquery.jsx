@@ -26,7 +26,7 @@ const Viewourquery = () => {
       };
 
       const response = await axios.get(url, { headers: headers });
-      console.log("response of query", response);
+      // console.log("response of query", response);
       if (response.data && response.data.data) {
         setQueryData(response.data.data);
       }

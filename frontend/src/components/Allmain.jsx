@@ -51,7 +51,7 @@ const Allmain = () => {
       <main
         id="main"
         className="main"
-        style={{ backgroundColor: "#D6E9FC", height: "auto" }}
+        style={{ backgroundColor: "#D6E9FC", height: "100vh" }}
       >
         {/* <PageTitle page={pageTitle} /> */}
         <Routes>

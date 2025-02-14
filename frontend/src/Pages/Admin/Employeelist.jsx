@@ -27,7 +27,7 @@ const Employeelist = () => {
         Authorization: `Bearer ${token}`,
       };
       const response = await axios.get(url, { headers: headers });
-      console.log("Get employee response", response);
+      // console.log("Get employee response", response);
       setEmployees(response.data.data); // Assuming the data is nested under data.data
     } catch (error) {
       console.log(error);
@@ -60,7 +60,7 @@ const Employeelist = () => {
           Swal.fire("Deleted!", "The employee has been deleted.", "success");
           GetEmployeelist();
         } catch (error) {
-          console.log("Error deleting employee", error);
+          // console.log("Error deleting employee", error);
           Swal.fire(
             "Error!",
             "There was an issue deleting the employee.",
@@ -97,7 +97,7 @@ const Employeelist = () => {
         formData.append("experience_letter", currentEmployee.experience_letter);
 
       const response = await axios.put(url, formData, { headers });
-      console.log("Update response", response);
+      // console.log("Update response", response);
       Swal.fire("Updated!", "Employee details have been updated.", "success");
       setOpenModal(false);
       GetEmployeelist();
@@ -147,14 +147,13 @@ const Employeelist = () => {
       headerName: "Aadhar",
       width: 150,
       renderCell: (params) => (
-        <img
-          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
-          alt="Aadhar"
-          style={{ width: 50, height: 50, cursor: "pointer" }}
-          onClick={() =>
-            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
-          }
-        />
+        <a
+          href={`https://hrportal.dreambytesolution.com/${params.value}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Aadhar
+        </a>
       ),
     },
     {
@@ -162,14 +161,13 @@ const Employeelist = () => {
       headerName: "PAN",
       width: 150,
       renderCell: (params) => (
-        <img
-          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
-          alt="PAN"
-          style={{ width: 50, height: 50, cursor: "pointer" }}
-          onClick={() =>
-            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
-          }
-        />
+        <a
+          href={`https://hrportal.dreambytesolution.com/${params.value}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View PAN
+        </a>
       ),
     },
     {
@@ -177,14 +175,13 @@ const Employeelist = () => {
       headerName: "Resume",
       width: 150,
       renderCell: (params) => (
-        <img
-          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
-          alt="Resume"
-          style={{ width: 50, height: 50, cursor: "pointer" }}
-          onClick={() =>
-            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
-          }
-        />
+        <a
+          href={`https://hrportal.dreambytesolution.com/${params.value}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Resume
+        </a>
       ),
     },
     {
@@ -192,14 +189,13 @@ const Employeelist = () => {
       headerName: "Experience Letter",
       width: 150,
       renderCell: (params) => (
-        <img
-          src={`https://hrportal.dreambytesolution.com/hr/${params.value}`}
-          alt="Experience Letter"
-          style={{ width: 50, height: 50, cursor: "pointer" }}
-          onClick={() =>
-            handleImageClick(`https://hrportal.dreambytesolution.com/hr/${params.value}`)
-          }
-        />
+        <a
+          href={`https://hrportal.dreambytesolution.com/${params.value}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View Experience Letter
+        </a>
       ),
     },
     {

@@ -30,7 +30,7 @@ const FranchiseDashboard = () => {
       };
 
       const response = await axios.get(url, { headers: headers });
-      console.log("Response of query:", response);
+      // console.log("Response of query:", response);
       if (response.data && response.data.data) {
         setQueryData(response.data.data.length);
       }

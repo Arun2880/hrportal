@@ -34,7 +34,7 @@ const Login = () => {
           "https://hrportal.dreambytesolution.com/hr/admin/login",
           body
         );
-  console.log("response of login api",response);
+  // console.log("response of login api",response);
         if (response.status === 200) {
           Swal.fire({
             icon: "success",
